@@ -4,28 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Standard Events, Including Mobile, Animation, and Transitions">
                 
-    <title></title>
+    <title>Shaun Courtney CIT 261 Standard JavaScript Events Including Mobile and Animation and Transition Events.</title>
     
-    <!-- Custom style for this site -->
-    <link href="/CIT261/css/style.css" rel="stylesheet">
-	
-	<!--- Custom style sheet for this page --> 
-	// <link href="/CIT261/css/standard_events.css" rel="stylesheet">
-      
-    <!-- Normalize CSS -->
-    <link href="/CIT261/css/normalize.css" rel="stylesheet">
+    
 </head>
 <body onload="pageLoadPopup()">
     <header>
-		<h3>Standard JavaScript Events<br>Including Mobile, Animation, and Transition</h3>
+		<h2>Standard JavaScript Events Including Mobile, Animation, and Transition</h2>
         <hr>
     </header>
     <div class="main_content">
 		
         <div class="col_left">
-        <h4>Display the Date/Time in the Same HTML Element</h4>
+             <h4>Change the content of the HTML element named dispTime by putting the mouse over the button. </h4>
 
-		<button onclick="this.innerHTML=Date()">The date/time is?</button>
+		     <button onmouseover="getElementById('dispTime').innerHTML=Date()">Display the date</button>
+			 <p id="dispTime" ></p>
+		
 		</div>
 		<div class="col_center">
         	<h4>Display the Date/Time in a Different HTML Element</h4>
