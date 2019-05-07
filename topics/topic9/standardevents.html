@@ -14,19 +14,19 @@
         <hr>
     </header>
     <div>
-		
-        <div>
-             <h4>Change the content of the HTML element named dispTime by putting the mouse over the button. </h4>
-             <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
-		     <button onmouseover="document.getElementById('demo').innerHTML=Date()">The time is?</button>
-             <p id="demo"></p>
-		
-		</div>
-		<div class="col_center">
-        	<h4>Display the Date/Time in a Different HTML Element</h4>
-			<button onclick="document.getElementById('different').innerHTML=Date()">The date/time is?</button>
+        <div class="col_center">
+        	<h4>Display the Current time and date by clicking on the button.</h4>
+			<button onclick="this.innerHTML=Date()"></button>
 			<p id="different"></p>
+		</div>        
+		
+		<div>
+             <h3>Display the current time by placing your mouse over the button. </h3>
+                <button onmouseover="document.getElementById('currTime').innerHTML=Date()">Display the current time</button>
+                <p id="curTime"></p>
+		
 		</div>
+		
 		<div class="col_right">
         	<h4>Display the Date/Time via a JavaScript Function Call</h4>
 			<button onclick="displayDate()">The time is?</button>
