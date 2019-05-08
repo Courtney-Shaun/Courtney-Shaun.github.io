@@ -21,15 +21,15 @@
 		</div>        
 		
 		<div>
-             <h3>Display the current time by placing your mouse over the button. </h3>
-                <button onmouseover="document.getElementById('currTime').innerHTML=Date()">Display the current time</button>
+             <h3>Display the current time and date by placing your mouse over the button. </h3>
+                <button onmouseover="document.getElementById('currTime').innerHTML=Date()">Current time and date</button>
                 <p id="currTime"></p>
 		
 		</div>
 		
 		<div class="col_right">
         	<h3>Display the time and date by calling a function on mouse over.</h3>
-			<button onmouseover="showDate()">Display Date</button>
+			<button onmouseover="showDate()">Display time and date</button>
 			<script>
 				function showDate() {
 					document.getElementById("disp_date").innerHTML = Date();
