@@ -13,7 +13,7 @@
 		<h2>Standard JavaScript Events Including Mobile, Animation, and Transition</h2>
         <hr>
     </header>
-    <div id="bckchnge">
+    <div id="backcolor">
         <div>
         	<h3>Display the Current time and date by clicking on the button.</h3>
 			<button onclick="this.innerHTML=Date()">Current time and date</button>
@@ -45,7 +45,19 @@
 				  alert("You clicked the button!");
 				 }
 			</script>	 
-		
+		</div>
+		<div>
+		    <h3>Change the background color of the page by putting your mouse over the button.</h3>
+			<button onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</button>
+			<script>
+			   function mouseOver() {
+			      document.getElementById("backcolor").style.color = "red";
+				}
+				
+				function mouseOut() {
+				  document.getElementById("backcolor").style.color = "white";
+				}
+			</script>	
 		</div>
 	</div>
 	<hr>
