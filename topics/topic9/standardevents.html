@@ -13,21 +13,21 @@
 		<h2>Standard JavaScript Events Including Mobile, Animation, and Transition</h2>
         <hr>
     </header>
-    <div>
-        <div class="col_center">
-        	<h4>Display the Current time and date by clicking on the button.</h4>
+    <div id="bckchnge">
+        <div>
+        	<h3>Display the Current time and date by clicking on the button.</h3>
 			<button onclick="this.innerHTML=Date()">Current time and date</button>
 			<p id="different"></p>
 		</div>        
 		
 		<div>
-             <h3>Display the current time and date by placing your mouse over the button. </h3>
-                <button onmouseover="document.getElementById('currTime').innerHTML=Date()">Current time and date</button>
-                <p id="currTime"></p>
+            <h3>Display the current time and date by placing your mouse over the button. </h3>
+            <button onmouseover="document.getElementById('currTime').innerHTML=Date()">Current time and date</button>
+            <p id="currTime"></p>
 		
 		</div>
 		
-		<div class="col_right">
+		<div>
         	<h3>Display the time and date by calling a function on mouse over.</h3>
 			<button onmouseover="showDate()">Display time and date</button>
 			<script>
@@ -35,13 +35,23 @@
 					document.getElementById("disp_date").innerHTML = Date();
 				}
 			</script>
-
 			<p id="disp_date"></p>
-
+		</div>
+		<div>
+		    <h3>Display an alert box when the button is clicked</h3>
+			<button onclick="alertFunction()">Click to Alert</button>
+			<script>
+			    function alertFunction() {
+				  alert("You clicked the button!");
+				 }
+			</script>	 
+		
 		</div>
 	</div>
 	<hr>
-    
+    <div>
+	  
+	</div>
 	<hr>
    <footer>
       
